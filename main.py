@@ -3,5 +3,3 @@
 from machine import video_poker
 
 video_poker()
-
-#test
