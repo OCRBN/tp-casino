@@ -129,37 +129,6 @@ def partie(bankroll, mise):
     return resultat, bankroll
 
 
-'''
-def video_poker():
-    
-    Lance le jeu du Video Poker :
-        Demande au joueur d'entrer le montant d'une bankroll et d'une mise
-        Puis lui permet de jouer jusqu'à avoir tout perdu
-    
-    bankroll = int(input("\nMontant initial de votre Bankroll : "))
-    mise = int(input("Votre mise : "))
-
-    while bankroll - mise < 0:
-        print("\nVous ne pouvez pas miser un montant supérieur à votre Bankroll !")
-        mise = int(input("Votre mise : "))
-
-    while bankroll - mise >= 0:
-        resultat, bankroll = partie(bankroll, mise)
-        print(str(resultat))
-        print("\n\nMontant de votre Bankroll :", bankroll)
-
-        if bankroll == 0:
-            print("\nGame Over !\n")
-            break
-        
-        else:
-            mise = int(input("Votre mise : "))
-
-            if bankroll - mise < 0:
-                print("\nVous ne pouvez pas miser un montant supérieur à votre Bankroll !")
-                mise = int(input("Votre mise : "))
-'''
-
 
 def video_poker():
     '''
@@ -195,6 +164,7 @@ def video_poker():
             mise = int(input("\nVotre mise : "))
             if bankroll - mise < 0:
                 print("\nVous ne pouvez pas miser un montant supérieur à votre Bankroll !")
+                print("Montant de votre Bankroll :", bankroll)
                 mise = int(input("Votre mise : "))
 
             resultat, bankroll = partie(bankroll, mise)
