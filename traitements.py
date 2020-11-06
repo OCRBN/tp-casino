@@ -8,7 +8,7 @@ def decompo_valeur_couleur(tirage_final):
         Récupère la valeur et la couleur de chaque carte grâce à l'index splité par "-" et les rajoute à la liste correspondante
 
     Param :
-        - tirage_final: Une liste
+        - tirage_final:     Une liste
 
     Sortie :
         2 listes 
@@ -30,10 +30,10 @@ def convert_integer(tirage_final):
         Récupère la valeur des cartes et les convertit en INTEGER en gérant les J, Q, K et A
 
     Param :
-        - tirage_final: Une liste
+        - tirage_final:     Une liste
 
     Sortie :
-        - valeur :      Une liste
+        - valeur :          Une liste
     '''
     valeur, couleur = decompo_valeur_couleur(tirage_final)
 

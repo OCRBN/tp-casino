@@ -11,8 +11,8 @@ def gains(tirage_final, mise):
         Multiplie la valeur du gain selon la combinaison gagnante
 
     Param :
-        - tirage_final: Une liste
-        - mise : Un integer
+        - tirage_final:     Une liste
+        - mise :            Un integer
     
     Sortie :
         - gain : Le gain obtenu (integer)
