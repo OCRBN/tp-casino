@@ -104,6 +104,7 @@ def machine():
 
     tirage_final = deuxieme_tirage(deck_2,jeu)
     print("Voici votre tirage final :", tirage_final)
+    
     return tirage_final
 
 
