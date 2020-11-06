@@ -154,10 +154,19 @@ def video_poker():
 
     while bankroll - mise >= 0:
         print("\n\nVoulez-vous rejouer ? (Oui(o) / Non(n)")
-        rejouer = (input("---> Choix : ")).lower()
+
+        while True:
+            rejouer = (input("---> Choix : ")).lower()
+            if rejouer == "o" or rejouer == "n":
+                break
+            else:
+                print("\n\nErreur ! Vous devez saisir \"o\" ou \"n\" ! Recommencez...\n")
+                print("Voulez-vous rejouer ? (Oui(o) / Non(n)")
+                print("Montant de votre Bankroll :", bankroll)
+                continue
         
         if rejouer == "n":
-            print("\nFin du jeu ! Vous repatez avec " + str(bankroll) + " euros")
+            print("\nFin du jeu ! Vous repartez avec " + str(bankroll) + " euros")
             break
         
         else:
